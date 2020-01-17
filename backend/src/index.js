@@ -6,7 +6,8 @@ const app = express()
 
 mongoose.connect('mongodb+srv://admin:admin@cluster0-4jhd2.mongodb.net/devradar?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
 })
 
 app.use(express.json())
